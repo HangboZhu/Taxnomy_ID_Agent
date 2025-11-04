@@ -28,10 +28,7 @@ The project employs a rule-based decision system rather than relying on LLM for 
 
 ```bash
 # Install dependencies using uv (recommended)
-uv install
-
-# Or using pip
-pip install -e .
+uv sync
 ```
 
 ## Environment Configuration
@@ -66,9 +63,9 @@ python taxnomy_agent.py --help
 ### Input Data Format
 
 CSV files should contain the following columns (script will automatically create missing columns):
-- `Common Name (Host)`: Species common names
-- `Latin name (Host)`: Latin scientific names
-- `Taxonomy ID (Host)`: NCBI Taxonomy IDs
+- `Common Name`: Species common names
+- `Latin name`: Latin scientific names
+- `Taxonomy ID`: NCBI Taxonomy IDs
 
 ## NCBI Taxonomy Database
 
